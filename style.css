@@ -1,0 +1,82 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  box-sizing: inherit;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.page-area {
+  width: 500px;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 14px 4px rgba(179, 179, 179, 1);
+  padding: 1rem;
+}
+
+.form-control {
+  font-size: 1rem;
+  font-weight: 400;
+  width: 100%;
+  display: block;
+  border: 1px solid #a8a8a8;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.25rem;
+  background-color: #fff;
+  font-family: inherit;
+  background-clip: padding-box;
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+.form-control__label {
+  display: block;
+  margin-bottom: 10px;
+}
+.form-control:focus {
+  border-color: #bdbdbd;
+  background-color: #fff;
+  color: #212529;
+  outline: 0;
+  box-shadow: 0px 0px 7px 4px rgba(179, 179, 179, 1);
+}
+.form-group:not(:last-child) {
+  margin-bottom: 14px;
+}
+.form-check__password {
+  text-decoration: none;
+  color: #1523a1;
+}
+.form-remember {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+.btn-submit {
+  cursor: pointer;
+  width: 100%;
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+  background-color: #3b71ca;
+  color: #fff;
+  border-radius: 7px;
+  text-transform: uppercase;
+  padding: 0.6rem;
+}
+.btn-submit:hover {
+  background-color: #386bc0;
+  box-shadow: 0 8px 9px -4px rgba(59, 113, 202, 0.3),
+    0 4px 18px 0 rgba(59, 113, 202, 0.2);
+}
